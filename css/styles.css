@@ -34,16 +34,37 @@ section {
 /* TEXT STYLES */
 .scroll-text {
   height: 100%;
+  width: 700px;
+  text-align: center;
+  margin: auto;
 }
 
-@media (max-width: 600px) {
-  .scroll-text {
-    width: 250px;
-  }
+.scroll-text ul {
+  text-align: left;
+}
+
+.scroll-text p, li {
+  font-size: 1.4em;
+  color: white;
+  line-height: 1.5em;
 }
 
 @media (max-width: 1280px) {
   .scroll-text {
-    width: 400px;
+    width: 480px;
+  }
+
+  .scroll-text p, li {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 600px) {
+  .scroll-text {
+    width: 300px;
+  }
+
+  .scroll-text p, li {
+    font-size: 0.8em;
   }
 }
