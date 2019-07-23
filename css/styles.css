@@ -19,34 +19,41 @@ section {
 .background {
   background-size: cover;
   position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #first-background {
   background-image: url('../images/background-1.png');
   opacity: 1;
   z-index: 10;
+  height: 100vh;
+  width: 100vw;
 }
 
 #second-background {
   background-image: url('../images/background-2.png');
   opacity: 1;
   z-index: 9;
+  height: 95vh;
+  width: 95vw;
 }
 
 #third-background {
   background-image: url('../images/background-3.png');
   opacity: 1;
   z-index: 8;
+  height: 90vh;
+  width: 90vw;
 }
 
 #fourth-background {
   background-image: url('../images/background-4.png');
   opacity: 1;
   z-index: 7;
+  height: 85vh;
+  width: 85vw;
 }
 
 /* TEXT STYLES */
