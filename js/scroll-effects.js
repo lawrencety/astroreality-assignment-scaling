@@ -1,11 +1,16 @@
 function parallaxFade() {
 	scrollPos = $(this).scrollTop();
-	$('#first-section').css({
-		'background-position' : '50%'
-    'opacity': 1-(scrollPos/100)
-	});
+  docHeight = $(this).height();
+  sectionHeight = docHeight/4;
+
+  if (scrollPos < sectionHeight) {
+    $('#first-section').css({
+      'opacity': 1 - (scrollPos / sectionHeight)
+  	});
+  } else if (scrollPos > sectionHeight && scrollPos < 2 * sectionHeight)
+
 	$('#second-section').css({
-		'opacity': 1-(scrollPos/100)
+		'opacity': ((scrollPos - sectionHeight) / sectionHeight)
 	});
 }
 $(document).ready(function(){
