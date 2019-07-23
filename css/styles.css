@@ -2,6 +2,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0px;
+  background-color: black;
 }
 
 .container {
@@ -10,33 +11,53 @@ body {
 
 /* SECTION STYLES */
 section {
+  height: 100vh;
+}
+
+/* BACKGROUND STYLES */
+.background {
   background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
   height: 100vh;
   width: 100vw;
 }
 
-#first-section {
+#first-background {
   background-image: url('../images/background-1.png');
+  opacity: 1;
+  z-index: 10;
 }
 
-#second-section {
+#second-background {
   background-image: url('../images/background-2.png');
+  opacity: 1;
+  z-index: 9;
 }
 
-#third-section {
+#third-background {
   background-image: url('../images/background-3.png');
+  opacity: 1;
+  z-index: 8;
 }
 
-#fourth-section {
+#fourth-background {
   background-image: url('../images/background-4.png');
+  opacity: 1;
+  z-index: 7;
 }
 
 /* TEXT STYLES */
 .scroll-text {
-  height: 100%;
+  display: block;
   width: 700px;
+  height: 100vh;
   text-align: center;
-  margin: auto;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  z-index: 20;
 }
 
 .scroll-text ul {
