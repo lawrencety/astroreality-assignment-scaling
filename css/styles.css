@@ -1,0 +1,49 @@
+/* PAGE STYLES */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0px;
+}
+
+.container {
+  background-color: black;
+}
+
+/* SECTION STYLES */
+section {
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+#first-section {
+  background-image: url('../images/background-1.png');
+}
+
+#second-section {
+  background-image: url('../images/background-2.png');
+}
+
+#third-section {
+  background-image: url('../images/background-3.png');
+}
+
+#fourth-section {
+  background-image: url('../images/background-4.png');
+}
+
+/* TEXT STYLES */
+.scroll-text {
+  height: 100%;
+}
+
+@media (max-width: 600px) {
+  .scroll-text {
+    width: 250px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .scroll-text {
+    width: 400px;
+  }
+}
